@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(187, 187, 187);
+}
+
+input[type=text]{
+    width: 20%;
+    height: 80px;
+    font-size: 30px;
+}
+
+input[type=button]{
+    height:50px;
+    width: 130px;
+    font-size: 18px;
+}
+
+/*  CALCULADORA  */
+.calculadora{
+    margin: 13% 30%;
+    border-bottom: solid ;
+    border-radius: 15px;
+    background-color: rgb(217, 217, 217);
+    border-right: solid;
+    width: 45%;
+    height: 550px;
+}
+/* _________________________________________________________ */
+
+
+/* TITULO */
+.titulo{
+    background-color:rgb(72, 72, 72);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height:100px;
+    text-align: center;
+    color: white;
+}
+
+.titulo h1{
+    padding-top: 5px;
+    font-size: 40px;
+}
+
+.titulo h3{
+    margin-top: -13px;
+    font-size: 25px;
+}
+
+.titulo h3>span>input[type=number]{
+    width: 11%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+}
+/* _______________________________________________________ */
+
+
+/* NOTAS */
+.notas{
+    margin-top: 30px;
+    margin-left: 15%;
+    display: flex;
+}
+
+.notas input[type=number]{
+    width: 50%;
+    height: 80px;
+    font-size: 35px;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.notas h3{
+    margin-top: 2px;
+    margin-left: 7%;
+}
+/* ___________________________________________________________ */
+
+
+/* CALCULAR */
+.calcular{
+    text-align: center;
+}
+
+.calcular input{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-weight: bold;
+}
+
+.calcular input:hover{
+    cursor: pointer;
+}
+/* ___________________________________________________________ */
+
+
+/* RESULTADO */
+.resultadoFinal{
+    margin-top: 2%;
+    margin-left: 40%;
+    height: 100px;
+    width: 20%;
+    background-color: white;
+    border:1px black solid;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.resultado h2{
+    margin-top: 5px;
+    text-align: center;
+}
+/* ___________________________________________________________ */
+
+
+/* STATUS */
+.status{
+    height: 80px;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.aprovado{
+    font-size: 40px;
+    padding-top: 10px;
+    color: blue;
+}
+
+.reprovado{
+    font-size: 40px;
+    padding-top: 10px;
+    color: red;
+}
+/* ___________________________________________________________ */
+
+
+/* MENSAGEM CAMPO OBRIGATORIO */
+.campoObrigatorio{
+    color: blue;
+    position: relative;
+    display: inline-block;
+}
+
+.mensagem{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    color:black;
+    font-size: 15px;
+}
+
+.campoObrigatorio:hover .mensagem{
+    display: block;
+}
+
+.campoObrigatorio:hover + .mensagem{
+    display: block;
+}
+
+.campoObrigatorio .mensagem{
+    z-index: 1;
+}
+/* ________________________________________________________________ */
+
+
+/* FOOTER */
+footer {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 20px;
+}
+
+footer p{
+    font-size: 20px;
+    margin-top: -10px;
+}
+/* ________________________________________________________________ */
+
+
+/* RESPONSIVO */
+@media screen and (max-width: 1024px) {
+/*  CALCULADORA  */
+    .calculadora{
+        margin-top: 7%;
+        height: 440px;
+    }
+
+/* TITULO */
+    .titulo h1{
+        font-size: 35px;
+    }
+
+    .titulo h3{
+        font-size: 25px;
+    }
+
+    .titulo h3>span>input[type=number]{
+        width: 14.5%;
+    }
+/* NOTAS */
+    .notas{
+        margin-top: 15px;
+    }
+
+    .notas input[type=number]{
+        height: 70px;
+        font-size: 25px;
+    }
+
+    .notas h3{
+        margin-left: 3px;
+        font-size: 17px;
+    }
+
+/* CALCULAR */
+    .calcular input{
+        font-size: 15px;
+        width: 22%;
+        height: 40px;
+        margin-top: -5px;
+    }
+
+/* RESULTADO */
+    .resultadoFinal{
+        height: 80px;
+        width: 20%;
+        font-size: 30px;
+    }
+
+/* STATUS */
+    .status{
+        margin-left: 30%;
+        margin-top: -23px;
+    }
+}
+
+@media screen and (max-width: 768px){
+/*  CALCULADORA  */
+    .calculadora{
+        margin-top: -10px;
+        height: 340px;
+    }
+
+/* TITULO */
+    .titulo{
+        height: 70px;
+    }
+
+    .titulo h1{
+        font-size: 25px;
+    }
+
+    .titulo h3{
+        font-size: 18px;
+    }
+
+    .titulo h3>span>input[type=number]{
+        width: 55px;
+        height: 25px;
+        font-size: 15px;
+    }
+
+/* NOTAS */
+    .notas{
+        margin-top: 10px;
+        margin-left: 12%;
+    }
+
+    .notas input[type=number]{
+        width: 60%;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .notas h3{
+        font-size: 15px;
+        margin-left: 3px;
+    }
+
+/* CALCULAR */
+    .calcular input{
+        height: 25px;
+        width: 25%;
+        font-size: 12px;
+    }
+
+/* RESULTADO */
+    .resultadoFinal{
+        font-size: 22px;
+        padding-top: 12px;
+        margin-top: 15px;
+        height: 50px;
+    }
+
+    .resultado h2{
+        font-size: 20px;
+    }
+
+/* STATUS */
+    .status{
+        margin-left: 24%;
+    }
+}
+
+@media screen and (max-width: 512px){
+/*  CALCULADORA  */
+    .calculadora{
+        height: 420px;
+        width: 70%;
+        margin-left: 17%;
+    }
+
+/* TITULO */
+    .titulo h1{
+        font-size: 25px;
+    }
+
+    .titulo h3{
+        font-size: 18px;
+    }
+
+/* NOTAS */
+    .notas{
+        margin-top: 15px;
+    }
+
+    .notas input[type=number]{
+        height: 70px;
+        font-size: 25px;
+    }
+
+    .notas h3{
+        margin-left: 3px;
+        font-size: 17px;
+    }
+
+/* STATUS */
+    .status{
+        height: 80px;
+        width: 30%;
+        margin-left: 25%;
+        margin-top: -10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:360px){
+    /* TITULO */
+    .titulo{
+        height: 65px;
+    }
+
+    .titulo h1{
+        font-size: 17px;
+        padding-top: 10px;
+        margin-top: 15px
+    }
+
+    .titulo h3{
+        padding-top: 5px;
+        font-size: 13px;
+    }
+
+    .titulo h3>span>input[type=number]{
+        padding-left: 1px;
+        width: 20%;
+    }
+
+/* NOTAS */
+    .notas{
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    
+    .notas input[type=number]{
+        height: 40px;
+        width: 80%;
+        padding-left: 1px;
+    }
+
+    .notas h3{
+        margin-left: 1px;
+        font-size: 15px;
+    }
+
+/* CALCULAR */
+    .calcular input{
+        margin-top: 15px;
+        width: 45%;
+        height: 50px;
+        font-size: 15px;
+    }
+
+/* RESULTADO */
+    .resultadoFinal{
+        height: 55px;
+        width: 30%;
+        margin-left: 35%;
+        margin-top: 25px;
+    }
+
+    .resultado h2{
+        margin-top: 10px;
+    }
+
+/* STATUS */
+    .status{
+        margin-left: 10%;
+    }
+}

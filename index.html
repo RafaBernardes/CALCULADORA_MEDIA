@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Média</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+
+        <div class="titulo">
+            <h1>Calculadora Média Escolar</h1>
+            <h3>
+                <div class="campoObrigatorio">*
+                    <div class="mensagem">
+                        Campo Obrigatório.
+                    </div>
+                </div>
+                Média para aprovação <span><input type="number" id="mediaAprovacao"></span> .</h3>
+        </div>
+
+        <section class="notas">
+            <div class="nota1">
+                <input type="number" id="nota1" value=""/>
+                <h3>NOTA 1</h3>
+            </div>
+            <div class="nota2">
+                <input type="number" id="nota2" value=""/>
+                <h3>NOTA 2</h3>
+            </div>
+            <div class="nota3">
+                <input type="number" id="nota3" value=""/>
+                <h3>NOTA 3</h3>
+            </div>           
+        </section>
+
+        <div class="calcular">
+            <input type="button" onclick="calcular()" value="CALCULAR" name="calcular">
+        </div>
+
+        <section class="resultado">
+            <div class="resultadoFinal"><!--COLOCAR O RESULTADO DA SOMA DAS PROVAS 1,2,3 E DIVIDIR POR 100--></div>
+            <h2>Média final</h2>
+        </section>
+
+        <div class="status">
+            <!--COLOCAR APROVADO OU REPROVADO NESTA DIV DE ACORDO COM O RESULTADO-->
+        </div>
+
+    </div>
+
+<footer>
+    <p>Desenvolvido por Rafael Bernardes</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
